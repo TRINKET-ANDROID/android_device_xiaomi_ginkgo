@@ -100,5 +100,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal/thermal-engine-map.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-map.conf \
     $(LOCAL_PATH)/configs/thermal/thermal-engine-normal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-normal.conf
 
+# Updater
+PRODUCT_PACKAGES += \
+    Updater
+
 # Inherit from trinket-common
 $(call inherit-product, device/xiaomi/trinket-common/trinket.mk)
